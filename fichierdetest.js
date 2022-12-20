@@ -1,3 +1,11 @@
-import os
-homepath = os.path.expanduser(os.getenv('USERPROFILE'));
-filepath = os.path.expanduser(os.getenv('USERPROFILE')) + '\\Documents\\myfile.txt';
+function OnPrinterStateChanged(state) {
+    var evt = new CustomEvent('printerstatechanged', { detail: state });
+
+    window.dispatchEvent(evt);
+}
+
+
+//Listen to your custom event
+window.addEventListener('printerstatechanged', function (e) {
+    console.log('printer state changed', e.detail);
+});

@@ -63,6 +63,18 @@ fs.writeFile(namef, contenuef, function (err) {
 
 //6 Écrivez un programme Node.js qui utilise le module os pour obtenir le répertoire personnel de l'utilisateur actuel.
 
+//7 Écrivez un programme Node.js qui utilise le module child_process pour exécuter un programme en ligne de commande.
+
+const { exec, spawn } = require('node:child_process');
+exec('MY.bat', (err, stdout, stderr) => {  //lancement batch MY.bat
+    if (err) {
+        console.error(err);
+        return;
+    }
+    console.log(stdout);
+});
+
+//8 Écrivez un programme Node.js qui utilise le module path pour manipuler les chemins de fichiers.
 
 
 

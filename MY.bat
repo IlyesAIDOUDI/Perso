@@ -1,0 +1,1 @@
+COPY C:\Users\IAD\Desktop\WORK\text.txt C:\Users\IAD\Desktop\WORK\text-copié.txt
