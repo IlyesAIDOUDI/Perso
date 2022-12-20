@@ -1,8 +1,3 @@
-fs.readFile('text.txt', 'utf-8', (err, data) => {
-    if (err) {
-        console.log(err)
-        return;
-    }
-    txt = console.log(data);
-    document.getElementById("SpanID").textContent = "New Text";
-})
+import os
+homepath = os.path.expanduser(os.getenv('USERPROFILE'));
+filepath = os.path.expanduser(os.getenv('USERPROFILE')) + '\\Documents\\myfile.txt';
