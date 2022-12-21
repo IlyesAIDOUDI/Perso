@@ -55,9 +55,9 @@ filenames.forEach((file) => {
 //5 Écrivez un programme Node.js qui utilise le module fs pour créer un nouveau fichier et y écrire des données.
 
 const fs = require('fs');
-namef = 'name.txt';
-contenuef = 'Contenue!';
-fs.writeFile(namef, contenuef, function (err) {
+name5 = 'name.txt';
+contenue5 = 'Contenue!';
+fs.writeFile(name5, contenue5, function (err) {
     if (err) throw err; console.log('Fichier créé !');
 });
 
@@ -74,7 +74,6 @@ const { exec, spawn } = require('node:child_process');
 exec('MY.bat', (err, stdout, stderr) => {  //lancement batch MY.bat
     if (err) {
         console.error(err);
-        return;
     }
     console.log(stdout);
 });
