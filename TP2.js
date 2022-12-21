@@ -76,6 +76,8 @@ exec('MY.bat', (err, stdout, stderr) => {  //lancement batch MY.bat
 
 //8 Écrivez un programme Node.js qui utilise le module path pour manipuler les chemins de fichiers.
 
+test
+
 
 
 
